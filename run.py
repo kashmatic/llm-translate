@@ -20,9 +20,9 @@ prompt_template = ChatPromptTemplate.from_messages([
 chain = prompt_template | llm | parser
 
 app = FastAPI(
-  title="simpleTranslator",
-  version="1.0",
-  description="A simple API server using LangChain's Runnable interfaces",
+    title="simpleTranslator",
+    version="1.0",
+    description="A simple API server using LangChain's Runnable interfaces",
 )
 
 add_routes(
@@ -32,6 +32,6 @@ add_routes(
 )
 
 if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="localhost", port=8000)
+  import uvicorn
+  
+  uvicorn.run(app, host="localhost", port=8000)
